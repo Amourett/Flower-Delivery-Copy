@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Flower Delivery</title>
+    <link
+      type="image/x-icon"
+      href="/img/icons/favicon.ico"
+      rel="shortcut icon"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost&family=Poppins:wght@100;200;300;400;500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@200;300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="announcebar row justify-content-md-center">
+        <p>
+          SAME DAY London delivery / Next day UK - ORDER BY 6PM, Monday to
+          Sunday
+        </p>
+      </div>
+
+      <!-- NAVBAR -->
+
+      <div class="row px-4 my-2">
+        <div class="col-md-4">
+          <i class="fa-solid fa-headphones"></i>
+          <a href="tel:+442031376215">(+44) 20 3137 6215</a>
+          <i class="fa fa-map-marker"></i>
+          <a href="#">Our Stores</a>
+        </div>
+        <div class="col-md-4 d-flex justify-content-md-center">
+          <img
+            class="logo"
+            src="https://flowersandplantsco.com/modules/wkwebp/views/img/store/logo.webp"
+            alt=""
+          />
+        </div>
+        <div class="col-md-4 d-flex justify-content-md-end">
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="btn"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            <i class="fa-regular fa-user"> </i>
+          </button>
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content rounded-0">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label"
+                      >Please enter your Email
+                    </label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Username or Email"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label"
+                      >Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Password"
+                    />
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-0 btn-lg"
+                    style="--bs-btn-padding-x: 47px; --bs-btn-font-size: 14px"
+                  >
+                    Login
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <a href="https://flowersandplantsco.com/login?back=my-account"
+            ><button type="button" class="btn btn">
+              <i class="fa-regular fa-heart"> </i></button
+          ></a>
+          <button
+            class="btn btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+          >
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <!-- Cart offcanvas -->
+          <div
+            class="offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <div>
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
+              </div>
+              <div class="d-flex align-items-center">
+                <button type="button" class="btn btn">
+                  <i class="fa-solid fa-arrow-rotate-right"></i>
+                </button>
+                <button type="button" class="btn btn">
+                  <i class="fa-solid fa-trash"></i>
+                </button>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Закрыть"
+                ></button>
+              </div>
+            </div>
+            <div class="offcanvas-body">
+              <div class="text-center">No products in cart.</div>
+            </div>
+          </div>
+          <input type="search" name="s" id="search" />
+          <button type="button" class="btn btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu -->
+
+      <div class="container">
+        <div class="col-sm-12 col-md-12">
+          <div class="row">
+            <ul class="d-flex justify-content-md-center">
+              <li><a href="#"></a> Shop flowers</li>
+              <li><a href="#"></a> Shop Plants</li>
+              <li><a href="#"></a> Subscribtions</li>
+              <li><a href="#"></a> Corporate</li>
+              <li><a href="#"></a> Weddings</li>
+              <li><a href="#"></a> Funeral</li>
+              <li><a href="#"></a> Delivery</li>
+              <li><a href="#"></a> Our Stores</li>
+              <li><a href="#"></a> Contact Us</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Flowers -->
+
+      <div class="card">
+        <div class="row g-0 justify-content-center">
+          <div class="col-5 text-center">
+            <div class="card-body pe-5">
+              <h1 class="card-title pt-5 pb-4">Flowers And Plants Delivered</h1>
+              <p class="pb-3">
+                With the best home-grown and international flowers, as well as
+                an irresistible selection of premium houseplants, there’s
+                something for everyone at Flowers & Plants Co. Browse our
+                collection and discover our same day London and next day
+                Nationwide delivery.
+              </p>
+              <p class="homedel pt-4">Flower Delivery in London and Uk</p>
+            </div>
+          </div>
+          <div class="col-5">
+            <img
+              src="/img/flowers-and-plants-delivery-london-and-uk.jpg"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Flower Cards-->
+
+      <div class="container text-center pt-3 pb-5">
+        <div class="row row-cols-2 row-cols-lg-4 align-items-center">
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/daisy-chain.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Daisy Chain</p>
+                <span class="price"> £35.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/peachy.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Peachy</p>
+                <span class="price"> £37.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/new-year-glow.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">New Year Glow</p>
+                <span class="price"> £33.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/feeling-festive.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Festive Feeling</p>
+                <span class="price"> £39.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/rose-solidago.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Rose & Solidago</p>
+                <span class="price"> £34.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/blooming-fields.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Blooming Fields</p>
+                <span class="price"> £49.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/the-lady-jane.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">The Lady Jane</p>
+                <span class="price"> £35.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/coastal-blues.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Coastal Blues</p>
+                <span class="price"> £29.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/pink-seduction.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Pink Seduction</p>
+                <span class="price"> £36.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/peach-melba.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Peach Melba</p>
+                <span class="price"> £29.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/oh-perfect-rose.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Oh, Perfect Rose</p>
+                <span class="price"> £34.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature/elixir-of-love.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Elixir of Love</p>
+                <span class="price"> £44.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section Plants -->
+
+      <div class="card">
+        <div class="row g-0 justify-content-center">
+          <div class="col-4">
+            <img
+              src="/img/luxury-flowers-london-and-uk.jpg"
+              class="img-fluid"
+              style="border: 15px solid #f9e4dd"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-5" style="background-color: #fcf6f6">
+            <div class="card-body my-5">
+              <h2 class="card-title pt-5 pb-4">Fresh Flowers</h2>
+              <p class="pb-3">
+                Flowers & Plants Co are experts in all things horticultural, but
+                fresh cut flowers have always been our favourites. Over the
+                years we have learned how to source not only the freshest and
+                highest quality produce, but flowers that are responsibly and
+                ethically grown with a massive range of Fair Trade and
+                Rainforest Alliance lines.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 text-uppercase button-shop"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Plant Cards -->
+
+      <div class="container text-center pt-3 pb-5">
+        <div class="row row-cols-2 row-cols-lg-4 align-items-center">
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/calathea-freddie.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Calathea 'Freddie'</p>
+                <span class="price"> £36.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/calathea-sanderiana.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Calathea Sanderiana</p>
+                <span class="price"> £33.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/asparagus-fern.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Asparagus Fern</p>
+                <span class="price"> £37.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/chinese-money-plant.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Chinese Money Plant</p>
+                <span class="price"> £44.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/plant-four.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Maidenhair Fern</p>
+                <span class="price"> £35.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/goldon-pothos-.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Golden Pothos</p>
+                <span class="price"> £34.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/chamaedorea-elegans.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Parlour Palm</p>
+                <span class="price"> £30.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/dumb-cane.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Dumb Cane</p>
+                <span class="price"> £29.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/dendrobium.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">White Dendrobium</p>
+                <span class="price"> £37.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/plants.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Premium Peace Lily</p>
+                <span class="price"> £28.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/aloe-cosmo.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Aloe Cosmo</p>
+                <span class="price"> £27.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+          <div class="col p-1">
+            <div class="card" style="width: 17rem">
+              <img
+                src="/img/product-miniature-plants/aloe-vera.jpg"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text">Aloe Vera</p>
+                <span class="price"> £28.99</span>
+                <span class="add-to-card">- Buy Now</span>
+                <!--Сделать ссылку на добавление в корзину-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Planted Gifts Card -->
+
+      <div class="card d-flex justify-content-center align-items-center">
+        <div class="row justify-content-center g-0">
+          <div class="col-4 text-center" style="background-color: #fcf6f6">
+            <div class="card-body my-5">
+              <h2 class="card-title pt-5 pb-4">Planted Gifts</h2>
+              <p class="pb-3">
+                Enjoy the benefits of plants with our huge range of house and
+                outdoor plants and planters. These little miracles of nature are
+                proven to enhance our wellbeing, so it is no wonder we are
+                seeing a huge increase in their popularity over the recent
+                years.
+              </p>
+              <button
+                type="button"
+                class="btn btn-outline-dark rounded-0 text-uppercase button-shop"
+              >
+                Shop now
+              </button>
+            </div>
+          </div>
+          <div class="col-4">
+            <img
+              src="/img/shop-plants-uk-london.jpg"
+              class="img-fluid"
+              alt="..."
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Collection -->
+
+      <div class="container text-center d-block w-50 coll-title">
+        <p class="weddsub">Our Collections</p>
+        <p style="color: #7a7a7a">
+          With 7 days a week UK delivery service and same day delivery in
+          London, you are guaranteed to receive quality flowers straight to your
+          door. All this is not possible without their incredible team of
+          talented florists though, who work tirelessly around the clock to
+          ensure that their customers receive the best service and even better
+          flowers.
+        </p>
+      </div>
+
+      <!-- Collection Cards -->
+
+      <div class="container text-center coll-cards">
+        <div class="row g-3 justify-content-center">
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/img/Card-img/fp-flowers-and-champagne-collection-uk.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#" class="coll-card">FLOWERS & CHAMPAGNE</a>
+                <p class="coll-card-text">
+                  Make it a perfect gift with our selection of flowers and
+                  champagne gifts. Take advantage of our seven day delivery
+                  service.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/img/Card-img/birthday-flowers-uk-fp.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#" class="coll-card">BIRTHDAY FLOWERS</a>
+                <p class="coll-card-text">
+                  Our stunning birthday flowers collection can be sent to your
+                  loved ones in no time at all, ready for them to enjoy on their
+                  special day.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img
+                src="/img/Card-img/subscription-flowers-uk.jpg"
+                class="card-img-top rounded-0"
+                alt="..."
+              />
+              <div class="card-body">
+                <a href="#" class="coll-card">SUBSCRIPTION FLOWERS</a>
+                <p class="coll-card-text">
+                  Check out our collection of subscription flowers. Select
+                  frequency that suits your needs most and let us do the rest.
+                  Choose from several designs.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial -->
+
+      <div class="container text-center w-50 container-testimonial">
+        <div class="row justify-content-center">
+          <p class="testimonial-title">Our clients say</p>
+          <div class="position-relative">
+            <img src="/img/icons/quote-1.png" class="quoteicon1" />
+            <p class="testimonial">
+              I got a nice bromeliad plant from these guys a couple of months
+              ago. Have been meaning to get over and leave a review. It was a
+              nice plant and is still going well, though the flowers have now
+              died. I found Flowers and Plants Co almost out of the blue online
+              and very glad to have had the pleasure.
+            </p>
+            <img src="/img/icons/quote-1.png" class="quoteicon2" />
+          </div>
+          <p class="overview">Nick</p>
+        </div>
+      </div>
+
+      <!-- Radio -->
+
+      <div class="container container-radio">
+        <div class="row d-flex align-self-center">
+          <div class="col">
+            <div
+              class="list-group list-group-horizontal text-center"
+              id="list-tab"
+              role="tablist"
+            >
+              <a
+                class="list-group-item list-group-item-action active"
+                id="list-home-list"
+                data-bs-toggle="list"
+                href="#list-home"
+                role="tab"
+                aria-controls="list-home"
+                >Flowers Delivered</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-profile-list"
+                data-bs-toggle="list"
+                href="#list-profile"
+                role="tab"
+                aria-controls="list-profile"
+                >Planted Gifts</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                style="--bs-focus-ring-color: rgba(var(--bs-success-rgb), 0.25)"
+                id="list-messages-list"
+                data-bs-toggle="list"
+                href="#list-messages"
+                role="tab"
+                aria-controls="list-messages"
+                >FAQ's</a
+              >
+              <a
+                class="list-group-item list-group-item-action"
+                id="list-settings-list"
+                data-bs-toggle="list"
+                href="#list-settings"
+                role="tab"
+                aria-controls="list-settings"
+                >Loyality Points</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col py-3 px-4">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-home"
+              role="tabpanel"
+              aria-labelledby="list-home-list"
+            >
+              <p class="tabssub">Delivery 7 days a week</p>
+              <p class="tabcontent">
+                We offer a same day London delivery seven days a week and a
+                Nationwide next day delivery from Monday to Sunday. Within
+                London we offer a click and collect service as well as a three
+                hour delivery service. As we are a dedicated flower delivery
+                service we also offer early morning and late night deliveries
+                and cater for bespoke orders no matter the difficulty level.
+              </p>
+              <p class="tabcontent">
+                Our blooms are made to inspire and you will be sent a link which
+                will allow you to track your flower delivery every step of the
+                way.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-profile"
+              role="tabpanel"
+              aria-labelledby="list-profile-list"
+            >
+              <p class="tabssub">Seasonal Plants</p>
+              <p class="tabcontent">
+                Here at Flowers &amp; Plants Co we have partnered with
+                specialised local, Dutch and Danish growers to deliver you
+                thriving plants that are grown with utmost care and a great deal
+                of technical knowledge.
+              </p>
+              <p class="tabcontent">
+                We offer standard as well as a bespoke range of pots and
+                planters and our in house landscapers are at hand to design and
+                build any type of a planter imagined. So whether you are after a
+                simple planted gift, a window box for your balcony, or a range
+                of potted interior plants for your offices that we can maintain
+                for you – we have your covered.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-messages"
+              role="tabpanel"
+              aria-labelledby="list-messages-list"
+            >
+              <p class="tabssub">Frequently Asked Questions</p>
+              <p class="tabcontent">
+                Q. Do you offer same day flower delivery in London?
+              </p>
+              <p class="tabcontent">
+                A. We offer same day flowers London 7 days a week. Wherever you
+                are in the capital we’ll make sure your flowers and plants are
+                delivered on time.
+              </p>
+              <p class="tabcontent">
+                Q. Do you deliver flowers and plants anywhere in the UK?
+              </p>
+              <p class="tabcontent">
+                A. Yes, all our products and services are available throughout
+                the UK. Choose your delivery options at checkout.
+              </p>
+              <p class="tabcontent">
+                Q. Can I book late night delivery to London?
+              </p>
+              <p class="tabcontent">
+                A. Yes. Late night delivery London is available whenever you
+                need it. The service operations 7 days a week from 6pm-10pm.
+              </p>
+              <p class="tabcontent">
+                Q. Do you offer Click &amp; Collect service?
+              </p>
+              <p class="tabcontent">
+                A. We do. Select the relevant option during checkout and we’ll
+                update you when your order is ready. You can choose to collect
+                your flowers from several of our partner shops as well as our
+                main store in London. Please see options at the checkout or give
+                us a call to find out more.
+              </p>
+              <p class="tabcontent">Q. What are your delivery charges?</p>
+              <p class="tabcontent">
+                A. We charge a flat rate of £6.95 for all same day and scheduled
+                orders. Our special delivery options are charged at £9.95.
+              </p>
+              <p class="tabcontent">
+                Q. What is the cut-off time for same day delivery of flowers and
+                plants?
+              </p>
+              <p class="tabcontent">
+                A. We have a cut-off time of 6pm for same day orders. Please
+                complete your checkout process by this time to guarantee same
+                day dispatch.
+              </p>
+              <p class="tabcontent">
+                Q. Can we customize any of the products on your website?
+              </p>
+              <p class="tabcontent">
+                A. Yes. Get in touch and we’ll be happy to customise any product
+                for you.
+              </p>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-settings"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              <p class="tabssub">Earn Loyality Points With Every Order</p>
+              <p class="tabcontent">More info coming soon.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+
+      <div class="container-fluid footer d-block">
+        <div class="bannersection">
+          <p class="newsletter-label">Sign up for news & offers</p>
+          <p class="text-para">
+            Sign up for our newsletter to receive the lattest news and offers in
+            the florist indusrty as well as lattest events and workshops.
+          </p>
+          <div class="row justify-content-center">
+            <input
+              type="email"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Your email address"
+            />
+            <button
+              type="button"
+              class="btn btn-dark rounded-0 text-uppercase button-shop b-footer"
+            >
+              Sign Up
+            </button>
+          </div>
+          <p class="privacy-text">
+            <small
+              >By signing up you agree to Flowers & Plants Co.
+              <a href="#" style="text-decoration: none; color: #000"
+                >Privacy Policy</a
+              ></small
+            >
+          </p>
+        </div>
+        <div class="footer-container">
+          <div class="row">
+            <div class="block-contact col-md-3">
+              <img src="/img/icons/logofooter.png" alt="" />
+              <div>
+                <a href="#" style="text-decoration: none; color: #212529"
+                  >Email Us</a
+                >
+                <p>Phone: 020 3137 6215</p>
+              </div>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <li><a href="#">Birthday Flowers</a></li>
+                <li><a href="#">Flowers & Champagne</a></li>
+                <li><a href="#">Delivery</a></li>
+                <li><a href="">Balloons Delivery</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <li><a href="#">UK Delivery</a></li>
+                <li><a href="#">24 Hour Delivery London</a></li>
+                <li><a href="#">International</a></li>
+                <li><a href="#">Sunday Delivery London</a></li>
+                <li><a href="#">Corporate Services</a></li>
+                <li><a href="#">Wedding Flowers</a></li>
+                <li><a href="#">Flower Subscriptons</a></li>
+              </ul>
+            </div>
+            <div class="col-md-2">
+              <ul>
+                <li><a href="#">Flowers Care Tips</a></li>
+                <li><a href="#">Flowers Help/ FAQ</a></li>
+                <li><a href="#">Plants Help/ Faq</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Sitemap</a></li>
+                <li><a href="#">Student Discount</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+              </ul>
+            </div>
+            <div class="block-my-account col-md-3">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-instagram fa-2xl"
+                      style="color: #666666"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-square-facebook fa-2xl"
+                      style="color: #666666"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fa-brands fa-linkedin fa-2xl"
+                      style="color: #666666"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://m.youtube.com/channel/UC1BPGzpFlLtiHrdc2a_LGew"
+                    ><i
+                      class="fa-brands fa-youtube fa-2xl"
+                      style="color: #666666"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/46d07e1dbb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,293 @@
+:root {
+  --pink: #e1aeaf;
+  --white: #fff;
+  --footer: #ebf6f7;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.announcebar p {
+  background-color: var(--pink);
+  color: var(--white);
+  font-size: 12px;
+  font-family: 'Jost', sans-serif;
+  height: 30px;
+  padding: 6px;
+  text-align: center;
+  margin: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: inherit;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  padding-right: 6px;
+}
+
+.logo {
+  width: 50%;
+  height: auto;
+}
+
+form {
+  padding: 15px;
+}
+
+label {
+  color:black;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+}
+
+.button-shop {
+  height: 3rem;
+  width: 10rem;
+}
+
+.offcanvas-header {
+border-bottom: 1px solid #b3b0b0;
+}
+
+#search {
+  border:none;
+  border-bottom: 1px solid black;
+  width: 100px;
+} 
+
+li {
+  display: inline-block;
+  padding: 0px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h1 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 66px; 
+  font-weight: 900;
+}
+
+h2 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 45px; 
+  font-weight: 500;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  margin: 18px 0;
+}
+
+.homedel {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.card {
+  border: none;
+}
+
+.price {
+  font-family: 'Poppins', sans-serif;
+  font-size: 17px;
+  color: black;
+  font-weight: 500;
+}
+
+.add-to-card {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  color: #8e8573;
+}
+
+
+.section-img img {
+  border: 15px solid #f9e4dd;
+}
+
+.section-text {
+  background-color: #fcf6f6;
+
+}
+
+.weddsub {
+  font-family: 'Rubik', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  margin: 38px 0;
+}
+
+.coll-card {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+
+.coll-card-text {
+font-family: 'Poppins', sans-serif;
+font-size: 0.9rem;
+font-weight: 300;
+color: black;
+}
+
+.coll-title {
+  margin-top: 100px;
+}
+
+.coll-cards {
+  margin-top: 75px;
+}
+
+.testimonial-title {
+  font-family: 'Rubik', sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: black;
+  margin: 19px 0;
+}
+
+.testimonial {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.9rem;
+  color: #868686;
+  font-weight: 300;
+  margin-top: 75px;
+}
+
+.container-testimonial {
+  margin-top: 100px;
+}
+
+.quoteicon1 {
+  width: 40px;
+  height: 35px;
+  padding: 0;
+  transform: scaleX(-1);
+  position: absolute;
+  left: -41px;
+  top: 26px;
+}
+
+.quoteicon2 {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: -50px;
+  bottom: -22px;
+}
+
+.overview {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: #212529;
+  font-style: italic;
+  padding-bottom: 75px;
+}
+
+.container-radio {
+  padding: 64px 0;
+}
+
+.list-group-item.active {
+  border: none;
+  border-top: 2px solid #f9e4e3;
+}
+
+.list-group-item {
+  --bs-list-group-active-color: #000000;
+    --bs-list-group-active-bg: #ffffff;
+    border: none;
+    font-family: 'Rubik',sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #000000;
+}
+
+.tabssub {
+  font-family: 'Rubik', sans-serif;
+  color: #000000;
+  font-size: 1.9rem;
+  font-weight: 700;
+}
+
+.tabcontent {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  font-size: 1rem;
+}
+
+.footer {
+  background-color: var(--footer);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.newsletter-label {
+  font-family: 'Rubick', sans-serif;
+  font-size: 1rem;
+  color: #000000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 35px 0 10px;
+}
+
+.text-para {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+  color: #000000;
+  margin: 14px 0;
+}
+
+.form-control {
+  width: 452px;
+}
+
+.b-footer {
+  height: 40px;
+}
+
+.footer-container {
+  padding: 48px 0 0;
+}
+
+.footer-container img{
+  width: 189px;
+  height: 27px;
+}
+
+.footer-container ul {
+  text-align: left;
+}
