@@ -1,21 +1,23 @@
+/* All */
+
 :root {
   --pink: #e1aeaf;
   --white: #fff;
   --footer: #ebf6f7;
 }
-
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
 }
-
 body {
   margin: 0;
   padding: 0;
 }
-
 .container-fluid {
   padding: 0;
 }
+
+/* Navbar */
 
 .announcebar p {
   background-color: var(--pink);
@@ -27,7 +29,6 @@ body {
   text-align: center;
   margin: 0;
 }
-
 li a {
   text-decoration: none;
   color: inherit;
@@ -35,15 +36,15 @@ li a {
   font-weight: 300;
   padding-right: 6px;
 }
-
 .logo {
   width: 50%;
   height: auto;
 }
-
 form {
   padding: 15px;
 }
+
+/* Modal */
 
 label {
   color:black;
@@ -52,20 +53,29 @@ label {
   font-weight: 300;
 }
 
+/* Buttons */
+
 .button-shop {
   height: 3rem;
   width: 10rem;
 }
+.btn .badge {
+  position: relative;
+  top: 48px;
+}
+
+/* Cart Offcanvas */
 
 .offcanvas-header {
 border-bottom: 1px solid #b3b0b0;
 }
-
 #search {
   border:none;
   border-bottom: 1px solid black;
   width: 100px;
 } 
+
+/* Fonts */
 
 li {
   display: inline-block;
@@ -77,65 +87,84 @@ li:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
 h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 66px; 
   font-weight: 900;
 }
-
 h2 {
   font-family: 'Rubik', sans-serif;
   font-size: 45px; 
-  font-weight: 500;
+  font-weight: 700;
 }
-
-.card-text {
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-}
-
 p {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   font-weight: 300;
   margin: 18px 0;
 }
-
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
 .homedel {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 800;
-}
+} 
+
+/* Item Cards */
 
 .card {
   border: none;
+  /* width: 15rem */
 }
-
+.section-card {
+  justify-content: center; 
+  display: flex;
+}
+.card-content {
+  max-width: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  background-color: #fcf6f6;
+  gap: 20px;
+}
+.card-content-main {
+  max-width: 1600px;
+  display: flex;
+  align-items: center;
+  justify-content:center;
+}
+.card-container {
+  width: 50%;
+}
+.card-container-main {
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+}
+.article {
+  display: flex;
+  justify-content: center;
+  width: 273px;
+}
 .price {
   font-family: 'Poppins', sans-serif;
   font-size: 17px;
   color: black;
   font-weight: 500;
 }
-
 .add-to-card {
   font-family: 'Poppins', sans-serif;
   font-size: 15px;
   color: #8e8573;
 }
 
-
-.section-img img {
-  border: 15px solid #f9e4dd;
-}
-
-.section-text {
-  background-color: #fcf6f6;
-
-}
+/* Our Collection */
 
 .weddsub {
   font-family: 'Rubik', sans-serif;
@@ -143,7 +172,6 @@ p {
   font-weight: 700;
   margin: 38px 0;
 }
-
 .coll-card {
   font-family: 'Rubik', sans-serif;
   font-size: 1rem;
@@ -151,22 +179,18 @@ p {
   text-decoration: none;
   color: black;
 }
-
 .coll-card-text {
 font-family: 'Poppins', sans-serif;
 font-size: 0.9rem;
 font-weight: 300;
 color: black;
 }
-
 .coll-title {
   margin-top: 100px;
 }
-
 .coll-cards {
   margin-top: 75px;
 }
-
 .testimonial-title {
   font-family: 'Rubik', sans-serif;
   font-size: 19px;
@@ -176,6 +200,8 @@ color: black;
   margin: 19px 0;
 }
 
+/* Testimonial */
+
 .testimonial {
   font-family: 'Poppins', sans-serif;
   font-size: 0.9rem;
@@ -183,11 +209,9 @@ color: black;
   font-weight: 300;
   margin-top: 75px;
 }
-
 .container-testimonial {
   margin-top: 100px;
 }
-
 .quoteicon1 {
   width: 40px;
   height: 35px;
@@ -197,7 +221,6 @@ color: black;
   left: -41px;
   top: 26px;
 }
-
 .quoteicon2 {
   width: 40px;
   height: 40px;
@@ -206,7 +229,6 @@ color: black;
   right: -50px;
   bottom: -22px;
 }
-
 .overview {
   font-family: 'Poppins', sans-serif;
   font-size: 1.4rem;
@@ -215,15 +237,15 @@ color: black;
   padding-bottom: 75px;
 }
 
+/* Radio */
+
 .container-radio {
   padding: 64px 0;
 }
-
 .list-group-item.active {
   border: none;
   border-top: 2px solid #f9e4e3;
 }
-
 .list-group-item {
   --bs-list-group-active-color: #000000;
     --bs-list-group-active-bg: #ffffff;
@@ -233,19 +255,19 @@ color: black;
     font-weight: 700;
     color: #000000;
 }
-
 .tabssub {
   font-family: 'Rubik', sans-serif;
   color: #000000;
   font-size: 1.9rem;
   font-weight: 700;
 }
-
 .tabcontent {
   font-family: 'Poppins', sans-serif;
   color: #000000;
   font-size: 1rem;
 }
+
+/* Footer */
 
 .footer {
   background-color: var(--footer);
@@ -254,7 +276,6 @@ color: black;
   align-items: center;
   text-align: center;
 }
-
 .newsletter-label {
   font-family: 'Rubick', sans-serif;
   font-size: 1rem;
@@ -263,7 +284,6 @@ color: black;
   text-transform: uppercase;
   padding: 35px 0 10px;
 }
-
 .text-para {
   font-family: 'Poppins', sans-serif;
   font-size: 0.8rem;
@@ -271,33 +291,65 @@ color: black;
   color: #000000;
   margin: 14px 0;
 }
-
 .form-control {
   width: 452px;
   box-shadow: 0px 0px 20px -9px #000000;
 }
-
 .b-footer {
   height: 40px;
 }
-
 .footer-container {
   padding: 48px 0 0;
 }
-
 .footer-container img{
   width: 189px;
   height: 27px;
 }
-
 .footer-container ul {
   text-align: left;
 }
-
 .footer-container a {
 font-size: 0.9rem;
 }
-
 .block-contact p {
   font-size: 0.9rem;
+}
+
+/* Media */
+
+@media only screen and (max-width: 992px) {
+  .logo {
+    width: 100%;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  .section-card p {
+    font-size: 0.8rem;
+  }
+  #homedel {
+    font-size: 18px;
+  }
+  .article {
+    width: 473px;
+  }
+
+}
+@media only screen and (max-width: 1299px) and (min-width: 992px){
+.article {
+  width: 229px;
+}
+}
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+::-webkit-scrollbar-thumb {
+  border: 5px solid transparent;
+  border-radius: 100px;
+  background-color: #e1aeaf;
+  background-clip: content-box;
 }
