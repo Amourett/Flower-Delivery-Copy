@@ -164,6 +164,10 @@ p {
   color: #8e8573;
 }
 
+.product-container {
+  margin: auto;
+}
+
 /* Our Collection */
 
 .weddsub {
@@ -344,7 +348,12 @@ font-weight: 400;
     font-size: 18px;
   }
   .article {
-    width: 300px;
+    width: 470px;
+  }
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
   }
   .content-wrapper {
     padding: 0 15px 0 15px;
@@ -357,18 +366,25 @@ font-weight: 400;
     font-size: 13px;
     font-weight: 400;
   }
- .footer-container a {
+
+  .footer-container {
+    padding: 48px 30px 0 30px;
+  }
+  .footer-container a {
   font-size: 13px;
-}
-.footer-container ul {
+  }
+  .footer-container ul {
   padding: 0;
-}
-.footer-container li {
+  }
+  .footer-container li {
   padding: 0;
-}
-.deskhide {
+  }
+  .deskhide {
   display: block;
-}
+  }
+  .deskhide img {
+    
+  }
 }
 @media only screen and (max-width: 1299px) and (min-width: 992px){
 .article {
