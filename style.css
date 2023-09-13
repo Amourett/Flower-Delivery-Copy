@@ -61,7 +61,7 @@ label {
 }
 .btn .badge {
   position: relative;
-  top: 48px;
+  top: 13px;
 }
 
 /* Cart Offcanvas */
@@ -342,6 +342,11 @@ font-weight: 400;
   display: none;
 }
 
+/* test */
+.wrap-menu {
+  align-items: start;
+}
+
 /* Media */
 
 @media only screen and (max-width: 991px) {
@@ -391,8 +396,8 @@ font-weight: 400;
   .deskhide {
   display: block;
   }
-  .deskhide img {
-    
+  .search-input {
+    display: none;
   }
 }
 @media only screen and (max-width: 1299px) and (min-width: 992px){
@@ -459,6 +464,12 @@ font-weight: 400;
   }
   .coll-cards > .col-4 {
     width: 75%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .wrap-menu {
+    display: none !important;
   }
 }
 /* Scrollbar */

@@ -49,26 +49,104 @@
         </p>
       </div>
 
-      <div class="row px-4 my-2 nav-row">
-        <div class="col">
-          <i class="fa-solid fa-headphones"></i>
-          <a href="tel:+442031376215" style="text-decoration: none; color: #000"
-            >(+44) 20 3137 6215</a
-          >
-          <i class="fa fa-map-marker" style="margin-left: 12px"></i>
-          <a href="#" style="text-decoration: none; color: #000">Our Stores</a>
-        </div>
-        <div class="col d-flex justify-content-md-center">
-          <img
-            class="logo"
-            src="https://flowersandplantsco.com/modules/wkwebp/views/img/store/logo.webp"
-            alt=""
-          />
-        </div>
-        <div class="col d-flex justify-content-md-end">
-          <!-- Button trigger modal -->
+      <nav class="navbar navbar-expand-lg row px-4" style="height: 50px">
+        <div class="d-flex">
+          <div class="wrap-menu col">
+            <button
+              class="navbar-toggler col"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Переключатель навигации"
+              style="border: none"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+          <!-- ---- -->
 
-          <div>
+          <button
+            class="navbar-toggler col"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+            style="border: none"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+
+          <div
+            class="offcanvas offcanvas-start"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Offcanvas с прокруткой тела
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <p>
+                Попробуйте прокрутить оставшуюся часть страницы, чтобы увидеть
+                эту опцию в действии.
+              </p>
+            </div>
+          </div>
+          <!-- przyklad -->
+
+          <div
+            class="col offcanvas offcanvas-start justify-content-center"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                Offcanvas с прокруткой тела
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Закрыть"
+              ></button>
+            </div>
+
+            <div class="col offcanvas-body d-block">
+              <i class="fa-solid fa-headphones"></i>
+              <a
+                href="tel:+442031376215"
+                style="text-decoration: none; color: #000"
+                >(+44) 20 3137 6215</a
+              >
+              <i class="fa fa-map-marker" style="margin-left: 12px"></i>
+              <a href="#" style="text-decoration: none; color: #000"
+                >Our Stores</a
+              >
+            </div>
+          </div>
+          <div class="col d-flex justify-content-md-center">
+            <img
+              class="logo"
+              src="https://flowersandplantsco.com/modules/wkwebp/views/img/store/logo.webp"
+              alt=""
+            />
+          </div>
+          <div class="col d-flex justify-content-md-end">
             <button
               type="button"
               class="btn p-2"
@@ -77,54 +155,6 @@
             >
               <i class="fa-regular fa-user fa-xl" style="color: #666"></i>
             </button>
-          </div>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="exampleModal"
-            tabindex="-1"
-            aria-labelledby="exampleModalLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog">
-              <div class="modal-content rounded-0">
-                <form>
-                  <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label"
-                      >Please enter your Email
-                    </label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="exampleInputEmail1"
-                      aria-describedby="emailHelp"
-                      placeholder="Username or Email"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label"
-                      >Password</label
-                    >
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Password"
-                    />
-                  </div>
-                  <button
-                    type="submit"
-                    class="btn btn-dark rounded-0 btn-lg"
-                    style="--bs-btn-padding-x: 47px; --bs-btn-font-size: 14px"
-                  >
-                    Login
-                  </button>
-                </form>
-              </div>
-            </div>
-          </div>
-
-          <div>
             <a href="https://flowersandplantsco.com/login?back=my-account"
               ><button type="button" class="btn btn p-2">
                 <i
@@ -132,8 +162,6 @@
                   style="color: #666"
                 ></i></button
             ></a>
-          </div>
-          <div>
             <button
               class="btn btn p-2"
               type="button"
@@ -155,49 +183,54 @@
                 <span class="visually-hidden">Count</span>
               </span>
             </button>
-          </div>
-
-          <!-- Cart offcanvas -->
-          <div
-            class="offcanvas offcanvas-end"
-            tabindex="-1"
-            id="offcanvasExample"
-            aria-labelledby="offcanvasExampleLabel"
-          >
-            <div class="offcanvas-header">
-              <div>
-                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Cart</h5>
-              </div>
-              <div class="d-flex align-items-center">
-                <button type="button" class="btn btn">
-                  <i class="fa-solid fa-arrow-rotate-right"></i>
-                </button>
-                <button type="button" class="btn btn">
-                  <i class="fa-solid fa-trash"></i>
-                </button>
-                <button
-                  type="button"
-                  class="btn-close"
-                  data-bs-dismiss="offcanvas"
-                  aria-label="Закрыть"
-                ></button>
-              </div>
-            </div>
-            <div class="offcanvas-body">
-              <div class="text-center">No products in cart.</div>
+            <div class="search-input">
+              <input type="search" name="s" id="search" />
+              <button type="button" class="btn btn">
+                <i
+                  class="fa-solid fa-magnifying-glass fa-lg"
+                  style="color: #666"
+                ></i>
+              </button>
             </div>
           </div>
-          <div>
-            <input type="search" name="s" id="search" />
-            <button type="button" class="btn btn">
-              <i
-                class="fa-solid fa-magnifying-glass fa-lg"
-                style="color: #666"
-              ></i>
-            </button>
-          </div>
+          <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Главная</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Ссылка</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Выпадающий список
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Действие</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Другое действие</a>
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Что-то еще здесь</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled">Отключенная</a>
+                </li>
+              </ul>
+            </div> -->
         </div>
-      </div>
+      </nav>
 
       <!-- Menu -->
       <div class="content-wrapper">
