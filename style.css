@@ -119,7 +119,6 @@ p {
 
 .card {
   border: none;
-  /* width: 15rem */
 }
 .section-card {
   justify-content: center; 
@@ -485,4 +484,37 @@ font-weight: 400;
   border-radius: 100px;
   background-color: #e1aeaf;
   background-clip: content-box;
+}
+
+/* PLANTS */
+
+/* Fonts */
+
+.plants h2 {
+  font-weight: 800;
+}
+.plants p {
+  font-size: 0.9rem;
+}
+
+/* Card*/
+
+.plants .section-card {
+  margin: 0 155px;
+}
+.info-plants {
+  background-color: #E6ECEE;
+}
+.plants .card-container img{
+  border: none;
+  height: 670px;
+}
+.plants-text {
+  /* padding: 80px 0px 0px 60px; */
+}
+.plants .card-container {
+  height: 670px;
+}
+.plants-img {
+
 }
